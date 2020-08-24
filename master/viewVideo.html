@@ -1,0 +1,51 @@
+<html>
+        <body>
+        <video id="eduVideo" width="500" height="500" controls>
+            <source src="./video/movie.mp4" type="video/mp4">          
+                Your browser does not support the video tag.
+        </video>
+        
+        <button onclick="playVideo()">Play</button>
+        <button onclick="replayFunction()">Replay</button> 
+        
+    
+       
+    
+    </body>
+
+      
+             
+
+<script>    
+        var n=1;
+        if(n!=0){
+        function playVideo(){
+            var x = document.getElementById("eduVideo");
+            var playCount=1;
+            x.play();
+            n=n+1;
+            alert(n);
+           
+            
+            if(playCount!=0)
+            {
+            function setDuration()
+            {
+                x.duration=0;
+                alert(x.duration);
+            }
+        }
+        }
+        
+        function replayFunction(){
+            var x = document.getElementById("eduVideo");
+            var playCount=1;
+            x.play();
+            n=n+1;
+            alert(n);
+        }
+    }
+      
+</script> 
+
+</html>
